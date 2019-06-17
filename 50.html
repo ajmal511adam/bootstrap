@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.divStyle{
+		padding-top:40px; 
+	}
+	body{
+		position: relative;
+	}
+	.affix{
+		position: fixed;
+		top:20px;
+	}
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="jumbotron">
+					<h1>Affix Example</h1>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<nav id="mainNavbar">
+		<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
+			<li class="active"><a href="#img1">Home</a></li>
+			<li><a href="#img2">Contact</a></li>
+			<li><a href="#img5">About</a></li>
+			<li><a href="#img4">Products</a></li>
+		</ul>
+</nav>
+			</div>
+			<div class="col-xs-9">
+				<div id="img1">
+	<h1>Crepe Jasmine</h1>
+	<img src="crepe jasmine.jpg" class="img-responsive" style="width:500px;height:600px">
+</div>
+<div id="img2">
+	<h1>Jasmine</h1>
+	<img src="download (1).jpg" class="img-responsive" style="width:500px;height:600px">
+</div>
+<div id="img5">
+	<h1>Hibiscuss</h1>
+	<img src="download (2).jpg" class="img-responsive" style="width:500px;height:600px">
+</div>
+<div id="img4">
+	<h1>Lotus</h1>
+	<img src="download (3).jpg" class="img-responsive" style="width:500px;height:600px">
+</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+$('body').scrollspy({
+target:'#mainNavbar',
+offset:10
+});
+	});
+</script>
+</body>
+</html>

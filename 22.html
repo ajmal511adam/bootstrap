@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css"></style>
+</head>
+<body>
+<div class="container">
+	<div class="col-xs-12">
+		<br>
+		<form>
+			<div class="form-group">
+				<label for="inputName">Name</label>
+				<input type="text" name="" class="form-control" id="inputName" placeholder="Full Name">
+			</div>
+			<div class="form-group">
+				<label for="inputDOB">Date of Birth</label>
+				<input type="date" name="" class="form-control" id="inputDOB">
+			</div>
+			<label for="inputSex">Sex</label><br>
+			<label class="radio-inline">
+				<input type="radio" name="radiogroup" value="male">Male
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="radiogroup" value="female">Female
+			</label><br><br>
+			<label for="inputCountry">Country</label><br>
+			<select class="form-control">
+				<option>India</option>
+				<option>China</option>
+				<option>USA</option>
+			</select><br>
+			<div class="form-group">
+				<label for="inputEmail">Email</label>
+				<input disabled type="email" name="" class="form-control" id="inputEmail" placeholder="Email Address">
+			</div>
+			<div class="form-group">
+				<label for="inputExperience">Work Experience</label>
+				<input readonly type="number" name="" class="form-control" id="inputExperience" placeholder="Total Experience">
+			</div>
+			<div class="form-group">
+				<label for="inputURL">Personal Website</label>
+				<input type="url" name="" class="form-control" id="inputURL" placeholder="Website Address">
+			</div>
+			<div class="form-group">
+				<label for="inputDescription">About</label>
+				<textarea class="form-control" id="inputDescription" rows="5"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Register</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

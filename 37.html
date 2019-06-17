@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+
+<style type="text/css"></style>
+</head>
+<body>
+<div class="container"><br>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<button type="button" class="btn btn-primary">Toggle Image Gallery</button>
+  <button type="button" class="btn btn-primary">Show Image Gallery</button>
+  <button type="button" class="btn btn-primary">Hide Image Gallery</button> 
+		</div>
+		<div class="panel-body collapse">
+			<div class="col-xs-4">
+<a href="crepe jasmine.jpg" class="thumbnail">
+<p>crepe jasmine</p>
+<img src="crepe jasmine.jpg" style="height: 195px"></a>
+</div>
+<div class="col-xs-4">
+<a href="download (1).jpg" class="thumbnail">
+<p>Jasmine</p>
+<img src="download (1).jpg"></a>
+</div>
+<div class="col-xs-4">
+<a href="download (2).jpg" class="thumbnail">
+<p>Hibiscuss</p>
+<img src="download (2).jpg"></a>
+</div>	
+		</div>
+	</div>
+
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $(".btn-primary").click(function(){
+    $(".collapse").collapse('toggle');
+  });
+  $(".btn-primary").click(function(){
+    $(".collapse").collapse('show');
+  });
+  $(".btn-primary").click(function(){
+    $(".collapse").collapse('hide');
+  });
+});
+</script>
+</body>
+</html>
