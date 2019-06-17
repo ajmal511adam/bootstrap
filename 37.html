@@ -12,9 +12,9 @@
 <div class="container"><br>
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<button type="button" class="btn btn-primary">Toggle Image Gallery</button>
-  <button type="button" class="btn btn-primary">Show Image Gallery</button>
-  <button type="button" class="btn btn-primary">Hide Image Gallery</button> 
+			<button type="button" class="btn btn-primary" id="toggleBtn">Toggle Image Gallery</button>
+  <button type="button" class="btn btn-primary" id="showBtn">Show Image Gallery</button>
+  <button type="button" class="btn btn-primary" id="hideBtn">Hide Image Gallery</button> 
 		</div>
 		<div class="panel-body collapse">
 			<div class="col-xs-4">
@@ -43,13 +43,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-  $(".btn-primary").click(function(){
+  $("#toggleBtn").click(function(){
     $(".collapse").collapse('toggle');
   });
-  $(".btn-primary").click(function(){
+  $("#showBtn").click(function(){
     $(".collapse").collapse('show');
   });
-  $(".btn-primary").click(function(){
+  $("#hideBtn").click(function(){
     $(".collapse").collapse('hide');
   });
 });
